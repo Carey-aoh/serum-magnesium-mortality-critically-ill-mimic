@@ -73,14 +73,14 @@ Run `python/010_ml_feature_selection.ipynb` to derive consensus covariate sets u
 - Selection strategies: SelectKBest, SelectFromModel, Recursive Feature Elimination (RFE)
 - SHAP for feature interpretability
 
-### Step 4: Baseline Table & Covariate Balance (R)
-Run `r/007_baseline_table_psm.R`, `r/006_density_plots_psm.R`, and `r/008_loveplot_psm.R` to generate Table 1 and assess covariate balance before/after matching.
-
-### Step 5: Causal Effect Estimation (R)
+### Step 4: Causal Effect Estimation (R)
 Run `r/004_forest_plots_subgroup.R` and `r/009_secondary_outcomes.R` to estimate the association between magnesium supplementation and mortality using:
 - Propensity score matching (1:1, caliper = 0.2 SD)
 - Inverse probability of treatment weighting (IPTW)
 - Multivariable Cox regression
+
+### Step 5: Baseline Table & Covariate Balance (R)
+Run `r/007_baseline_table_psm.R`, `r/006_density_plots_psm.R`, and `r/008_loveplot_psm.R` to generate Table 1 and assess covariate balance before/after matching.
 
 ### Step 6: Survival Curves & Sensitivity Analyses (R)
 Run `r/005_survival_curves.R` for Kaplan–Meier plots, and `r/001_sensitivity_analysis.R` with `r/002_forest_plots_sensitivity.R` to validate findings across different model specifications and subgroups.
